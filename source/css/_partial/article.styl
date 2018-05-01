@@ -4,7 +4,7 @@ article
       margin-top: 0
       margin-bottom: 0
       text-transform: none
-      font-size: 1.5em
+      font-size: 1.8em
       line-height: 1.25
 
     .meta
@@ -26,12 +26,16 @@ article
   .content
     h2:before
       position: absolute
-      top: -4px
+      top: 0
       left: -1rem
       color: $color-accent-1
       content: "#"
       font-weight: bold
       font-size: 1.2rem
+      transition: opacity 500ms ease-in-out;
+      opacity: 0.15
+    h2:hover:before
+      opacity: 1
 
     img, video
       display: block
@@ -114,7 +118,7 @@ article
 
 .posttitle
   text-transform: none
-  font-size: 1.5em
+  font-size: 1.8em
   line-height: 1.25
 
 .article-tag
